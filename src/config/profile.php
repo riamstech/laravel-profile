@@ -17,5 +17,6 @@ return [
     /**
      * Guard
      */
-    'guard' => 'web'
+    'guard' => 'web',
+
 ];

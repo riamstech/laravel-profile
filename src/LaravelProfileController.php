@@ -26,13 +26,13 @@ class LaravelProfileController extends Controller
     public function profile()
     {
         $user = $this->userGetter();
-        return view('profile::index', compact('user'));
+        return view('profile::profile.index', compact('user'));
     }
 
     public function information()
     {
         $user = $this->userGetter();
-        return view('profile::information', compact('user'));
+        return view('profile::profile.information', compact('user'));
     }
 
     public function setProfile(Request $request)
