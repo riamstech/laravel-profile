@@ -1,0 +1,12 @@
+{
+    "name": "berkayoztunnc/laravel-profile",
+    "description": "user model based profile staff",
+    "authors": [
+        {
+            "name": "berkayoztunnc",
+            "email": "mailberkayoztunc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
