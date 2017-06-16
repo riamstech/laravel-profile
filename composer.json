@@ -4,9 +4,29 @@
     "authors": [
         {
             "name": "berkayoztunnc",
-            "email": "mailberkayoztunc@gmail.com"
+            "email": "mailberkayoztunc@gmail.com",
+            "homepage": "https://berkayoztunc.github.io",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "keywords": [
+        "laravel",
+        "laravel-profile"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Berkayoztunc\\LaravelProfile\\" :"src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Berkayoztunc\\LaravelProfile\\LaravelProfileServicesProvider"
+            ]
+        }
+    }
 }
