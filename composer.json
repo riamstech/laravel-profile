@@ -22,6 +22,9 @@
     "scripts": {
         "test": "phpunit"
     },
+    "require": {
+        "php" : ">=7.0"
+    },
     "extra": {
         "laravel": {
             "providers": [
