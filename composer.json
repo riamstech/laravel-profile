@@ -22,7 +22,6 @@
     "scripts": {
         "test": "phpunit"
     },
-    "minimum-stability": "dev",
     "require": {
         "php" : ">=7.0"
     },
