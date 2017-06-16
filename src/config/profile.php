@@ -3,7 +3,7 @@
 
 return [
     /**
-     * Middleware of the profile
+     * Middleware of the profile wich is profile route
      */
     'middleware' => ['auth'],
     /**
@@ -15,8 +15,13 @@ return [
      */
     'user_class' => \App\User::class,
     /**
-     * Guard
+     * Guard for the activitys and route user find method ,
      */
     'guard' => 'web',
+
+    /**
+     * activity , you can close by the false with the links and more
+     */
+    'activity' => true,
 
 ];

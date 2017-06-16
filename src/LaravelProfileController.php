@@ -35,6 +35,13 @@ class LaravelProfileController extends Controller
         return view('profile::profile.information', compact('user'));
     }
 
+    public function activity()
+    {
+        $user = $this->userGetter();
+        $activitys = $user->userActivitys;
+        return view('profile::profile.activity', compact('user','activitys'));
+    }
+
     public function setProfile(Request $request)
     {
         $this->validate($request,
