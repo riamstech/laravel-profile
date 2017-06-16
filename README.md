@@ -1,7 +1,6 @@
 # laravel-profile
 
-Simple user profile and activity tracing with db connevtion,
-vie tracable method
+A laravel package that can do simple profile and activity tracking. Completes the indexing and viewing of profile actions for new initiatives or quick project developers.
 
 ## install
 
@@ -46,25 +45,42 @@ This is the contents of the published config/profile.php config file:
 ```
 return [
     /**
-     * Middleware of the profile wich is profile route
+    
+      Middleware of the profile wich is profile route
+    
      */
+    
     'middleware' => ['auth'],
+    
     /**
-     * custom prefix
+    
+      custom prefix
+    
      */
+    
     'route_prefix' => null,
+    
     /**
-     * As you wish spasifiy your model
+      
+      As you wish spasifiy your model
+     
      */
+     
     'user_class' => \App\User::class,
     /**
-     * Guard for the activitys and route user find method ,
+    
+      Guard for the activitys and route user find method ,
+    
      */
+     
     'guard' => 'web',
 
     /**
-     * activity , you can close by the false with the links and more
+     
+      activity , you can close by the false with the links and more
+     
      */
+     
     'activity' => true,
 
 ];
@@ -97,6 +113,13 @@ class YourModel extends Model
 }    
     
 ```
+
+### Screenshots
+
+![account](https://berkayoztunc.github.io/laravel-profile/account.png)
+![information](https://berkayoztunc.github.io/laravel-profile/information.png)
+![activity](https://berkayoztunc.github.io/laravel-profile/activity.png)
+
 
 ## lisance
 
