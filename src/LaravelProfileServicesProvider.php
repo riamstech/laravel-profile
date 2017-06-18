@@ -15,7 +15,7 @@ class LaravelProfileServicesProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/views', 'profile');
         $this->loadMigrationsFrom(__DIR__.'/migrations');
-
+        $this->loadTranslationsFrom(__DIR__.'/lang', 'profileLang');
         $this->publishes([
             __DIR__.'/config/profile.php' => config_path('profile.php')
         ], 'config');

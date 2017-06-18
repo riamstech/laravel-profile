@@ -10,16 +10,16 @@
 
             <div class="col-md-9 ">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Activitys</div>
+                    <div class="panel-heading">{{ trans('profileLang::profile.form_header.activitys') }}</div>
                     <div class="panel-body">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <td>ip</td>
-                                    <td>Action</td>
-                                    <td>Resources name</td>
-                                    <td>Resources id</td>
-                                    <td>Action Time</td>
+                                    <td>{{ trans('profileLang::profile.table.id') }}</td>
+                                    <td>{{ trans('profileLang::profile.table.action') }}</td>
+                                    <td>{{ trans('profileLang::profile.table.resources_name') }}</td>
+                                    <td>{{ trans('profileLang::profile.table.resources_id') }}</td>
+                                    <td>{{ trans('profileLang::profile.table.action_time') }}</td>
                                 </tr>
                             </thead>
                             <tbody>

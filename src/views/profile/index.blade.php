@@ -8,13 +8,13 @@
             </div>
             <div class="col-md-9 ">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Email change</div>
+                    <div class="panel-heading">{{ trans('profileLang::profile.form_header.email') }}</div>
                     <div class="panel-body">
-                        <div class="alert alert-info">Email of the account , which is provide to login in </div>
+                        <div class="alert alert-info">{{ trans('profileLang::profile.field_information.email') }}</div>
                         <form class="form-horizontal" role="form" method="POST" action="{{ url('/profile/set-email') }}">
                             {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                                <label for="email" class="col-md-4 control-label">{{ trans('profileLang::profile.field_name.email') }}</label>
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control" name="email" value="{{ $user->email }}" required>
                                     @if ($errors->has('email'))
@@ -27,7 +27,8 @@
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        update
+                                        {{ trans('profileLang::profile.button.update') }}
+
                                     </button>
                                 </div>
                             </div>
@@ -36,15 +37,15 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Reset Password</div>
+                    <div class="panel-heading">{{ trans('profileLang::profile.form_header.password') }}</div>
                     <div class="panel-body">
-                        <div class="alert alert-info">Password of the account , which is provide to login in </div>
+                        <div class="alert alert-info">{{ trans('profileLang::profile.field_information.password') }}</div>
 
                         <form class="form-horizontal" role="form" method="POST" action="{{ url('/profile/set-password') }}">
                             {{ csrf_field() }}
 
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                <label for="password" class="col-md-4 control-label">Password</label>
+                                <label for="password" class="col-md-4 control-label">{{ trans('profileLang::profile.field_name.password') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password" type="password" class="form-control" name="password" required>
@@ -58,7 +59,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+                                <label for="password-confirm" class="col-md-4 control-label">{{ trans('profileLang::profile.field_name.cnfpassword') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -67,7 +68,7 @@
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        update
+                                        {{ trans('profileLang::profile.button.update') }}
                                     </button>
                                 </div>
                             </div>
