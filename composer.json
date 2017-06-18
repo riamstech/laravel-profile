@@ -1,13 +1,10 @@
 {
     "name": "berkayoztunc/laravel-profile",
     "description": "user model based profile staff",
-    "require": {
-        "php" : "^7.0"
-    },
     "minimum-stability" :"stable",
     "authors": [
         {
-            "name": "berkayoztunnc",
+            "name": "Berkay Öztunç",
             "email": "mailberkayoztunc@gmail.com",
             "homepage": "https://berkayoztunc.github.io",
             "role": "Developer"
