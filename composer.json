@@ -1,6 +1,10 @@
 {
-    "name": "berkayoztunnc/laravel-profile",
+    "name": "berkayoztunc/laravel-profile",
     "description": "user model based profile staff",
+    "require": {
+        "php" : "^7.0"
+    },
+    "minimum-stability" :"stable",
     "authors": [
         {
             "name": "berkayoztunnc",
@@ -22,10 +26,6 @@
     "scripts": {
         "test": "phpunit"
     },
-    "require": {
-        "php" : ">=7.0"
-    },
-    "minimum-stability" :"stable",
     "extra": {
         "laravel": {
             "providers": [
