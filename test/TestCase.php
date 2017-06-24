@@ -26,8 +26,13 @@ abstract class TestCase extends Orchestra
     }
     protected function getPackageProviders($app)
     {
-        return [
-            Berkayoztunc\LaravelProfile\LaravelProfileServicesProvider::class,
-        ];
+        return ['Berkayoztunc\LaravelProfile\LaravelProfileServicesProvider'];
+    }
+    protected function createTestUser(){
+        return User::create([
+            'name'=>'laravel',
+            'email'=>'laravel@profile.com',
+            'password'=>bcrypt('secret')
+        ]);
     }
 }

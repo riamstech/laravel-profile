@@ -13,7 +13,7 @@ class DataBaseTest extends TestCase
         parent::setUp();
         $this->artisan('migrate', ['--database' => 'testing']);
     }
-    public function test_user_update_api()
+    public function test_user_has_about()
     {
         $this->assertTrue(Schema::hasColumn('users', 'about'));
     }
