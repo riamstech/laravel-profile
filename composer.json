@@ -20,6 +20,9 @@
             "Berkayoztunc\\LaravelProfile\\" :"src"
         }
     },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
     "scripts": {
         "test": "phpunit"
     },
