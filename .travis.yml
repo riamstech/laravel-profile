@@ -17,10 +17,5 @@ before_install:
   - php artisan migrate
   - cd ./vendor/berkayoztunc/laravel-profile
 
-before_script:
-  - cp .env.travis .env
-  - export APP_ENV="testing"
-  - php artisan migrate -q -n --path ./vendor/hyn-me/multi-tenant/src/migrations
-  - cd ./vendor/hyn-me/multi-tenant
 
 script: phpunit
