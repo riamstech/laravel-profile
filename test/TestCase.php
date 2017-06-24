@@ -24,4 +24,10 @@ abstract class TestCase extends Orchestra
             'prefix'   => '',
         ]);
     }
+    protected function getPackageProviders($app)
+    {
+        return [
+            Berkayoztunc\LaravelProfile\LaravelProfileServicesProvider::class,
+        ];
+    }
 }

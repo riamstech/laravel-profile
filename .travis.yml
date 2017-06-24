@@ -9,8 +9,7 @@ before_install:
   - cd ./laravel
   - composer require berkayoztunc/laravel-profile dev-master
   - composer update
-
-  - php artisan vendor:publish
+  - php artisan vendor:publish --provider=Berkayoztunc\LaravelProfile\LaravelProfileServicesProvider::class
   - mysql -e "create database IF NOT EXISTS homestead;" -uroot
 
   - php artisan make:auth
