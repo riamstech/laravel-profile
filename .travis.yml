@@ -4,16 +4,15 @@ php:
   - 7.1
   - 7.0
 before_install:
+
   - composer self-update
   - composer create-project laravel/laravel
   - cd ./laravel
   - composer require berkayoztunc/laravel-profile dev-master
   - composer update
   - php artisan vendor:publish --provider=Berkayoztunc\LaravelProfile\LaravelProfileServicesProvider::class
-  - mysql -e "create database IF NOT EXISTS homestead;" -uroot
-
+  - mysql -e "create database IF NOT EXISTS homestead;"
   - php artisan make:auth
-  - php artisan migrate
   - cd ./vendor/berkayoztunc/laravel-profile
 
 
