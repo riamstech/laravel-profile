@@ -14,6 +14,7 @@ before_install:
   - mysql -e "create database IF NOT EXISTS homestead;"
   - php artisan make:auth
   - cd ./vendor/berkayoztunc/laravel-profile
+  - composer update
 
 
 script: phpunit
