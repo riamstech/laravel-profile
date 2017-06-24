@@ -1,6 +1,6 @@
 {
     "name": "berkayoztunc/laravel-profile",
-    "description": "user model based profile staff",
+    "description": "Simple profile routes and views for starter project and user activitions tracking",
     "minimum-stability" :"stable",
     "authors": [
         {
