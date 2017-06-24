@@ -1,8 +1,8 @@
 <ul class="list-group">
-    <a href="/profile" class="list-group-item ">{{ trans('profileLang::profile.sidebar.account') }}</a>
-    <a href="/profile/information" class="list-group-item">{{ trans('profileLang::profile.sidebar.information') }}</a>
+    <a href="{{ route('profile.index') }}" class="list-group-item ">{{ trans('profileLang::profile.sidebar.account') }}</a>
+    <a href="{{ route('profile.information') }}" class="list-group-item">{{ trans('profileLang::profile.sidebar.information') }}</a>
     @if(config()->get('profile.activity'))
-    <a href="/profile/activity" class="list-group-item">{{ trans('profileLang::profile.sidebar.activity') }}</a>
+    <a href="{{ route('profile.activity') }}" class="list-group-item">{{ trans('profileLang::profile.sidebar.activity') }}</a>
     @endif
     <a href="{{ route('logout') }}"
        class="list-group-item"

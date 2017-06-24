@@ -16,6 +16,12 @@ return [
     'route_prefix' => null,
 
     /**
+     *
+     */
+
+    'api_route_prefix' => 'api/profile',
+
+    /**
       As you wish spasifiy your model
      */
 
