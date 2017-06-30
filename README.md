@@ -4,6 +4,8 @@
 [![Packagist Pre Release](https://img.shields.io/packagist/vpre/berkayoztunc/laravel-profile.svg)](https://packagist.org/packages/berkayoztunc/laravel-profile)
 [![Packagist](https://img.shields.io/packagist/dt/berkayoztunc/laravel-profile.svg)]()
 [![GitHub tag](https://img.shields.io/github/tag/berkayoztunc/laravel-profile.svg)]()
+
+
 A laravel package that can do simple profile and activity tracking. Completes the indexing and viewing of profile actions for new initiatives or quick project developers.
 
 ## install
