@@ -11,6 +11,6 @@ class UserActivitys extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'ip','action','user_id','record_name'
+        'ip', 'action', 'user_id', 'record_name',
     ];
 }
