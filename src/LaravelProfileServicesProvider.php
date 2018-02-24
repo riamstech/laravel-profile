@@ -17,15 +17,14 @@ class LaravelProfileServicesProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadTranslationsFrom(__DIR__.'/lang', 'profileLang');
         $this->publishes([
-            __DIR__.'/config/profile.php' => config_path('profile.php')
+            __DIR__.'/config/profile.php' => config_path('profile.php'),
         ], 'laravel-profile-config');
         $this->publishes([
-            __DIR__.'/migrations/' => database_path('migrations')
+            __DIR__.'/migrations/' => database_path('migrations'),
         ], 'laravel-profile-migrations');
         $this->publishes([
-            __DIR__.'/views' => resource_path('views')
+            __DIR__.'/views' => resource_path('views'),
         ], 'laravel-profile-views');
-
     }
 
     /**

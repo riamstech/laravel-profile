@@ -4,7 +4,6 @@ namespace Berkayoztunc\LaravelProfile;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -26,12 +25,14 @@ class LaravelProfileController extends Controller
     public function profile()
     {
         $user = $this->userGetter();
+
         return view('profile::profile.index', compact('user'));
     }
 
     public function information()
     {
         $user = $this->userGetter();
+
         return view('profile::profile.information', compact('user'));
     }
 
@@ -39,7 +40,8 @@ class LaravelProfileController extends Controller
     {
         $user = $this->userGetter();
         $activitys = $user->userActivitys;
-        return view('profile::profile.activity', compact('user','activitys'));
+
+        return view('profile::profile.activity', compact('user', 'activitys'));
     }
 
     public function setProfile(Request $request)
@@ -51,6 +53,7 @@ class LaravelProfileController extends Controller
         $this->userGetter()->update([
             'name' => $request->name,
         ]);
+
         return redirect()->back();
     }
 
@@ -63,6 +66,7 @@ class LaravelProfileController extends Controller
         $this->userGetter()->update([
             'about' => $request->about,
         ]);
+
         return redirect()->back();
     }
 
@@ -70,12 +74,13 @@ class LaravelProfileController extends Controller
     {
         $this->validate($request,
             [
-                'password' => 'required|confirmed',
+                'password'              => 'required|confirmed',
                 'password_confirmation' => 'required',
             ]);
         $this->userGetter()->update([
             'password' => Hash::make($request->password),
         ]);
+
         return redirect()->back();
     }
 
@@ -91,6 +96,7 @@ class LaravelProfileController extends Controller
                 'email' => $request->email,
             ]);
         }
+
         return redirect()->back();
     }
 }
