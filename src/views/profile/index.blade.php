@@ -7,9 +7,9 @@
                 @include('profile::layouts.sidebar-profile')
             </div>
             <div class="col-md-9 ">
-                <div class="panel panel-default">
-                    <div class="panel-heading">{{ trans('profileLang::profile.form_header.email') }}</div>
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-header">{{ trans('profileLang::profile.form_header.email') }}</div>
+                    <div class="card-block">
                         <div class="alert alert-info">{{ trans('profileLang::profile.field_information.email') }}</div>
                         <form class="form-horizontal" role="form" method="POST" action="{{ url('/profile/set-email') }}">
                             {{ csrf_field() }}
@@ -36,9 +36,9 @@
 
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">{{ trans('profileLang::profile.form_header.password') }}</div>
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-header">{{ trans('profileLang::profile.form_header.password') }}</div>
+                    <div class="card-block">
                         <div class="alert alert-info">{{ trans('profileLang::profile.field_information.password') }}</div>
 
                         <form class="form-horizontal" role="form" method="POST" action="{{ url('/profile/set-password') }}">

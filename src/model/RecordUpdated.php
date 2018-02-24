@@ -17,9 +17,9 @@ class RecordUpdated
         $user = \Auth::guard(config()->get('profile.gurad'))->user();
         $name = $model->tracingName;
         if($user){
-            $model->activitys()->create(['record_name' => $name,'ip'=>$request->ip(),'action'=>'deleted','user_id'=>$user->id]);
+            $model->activitys()->create(['record_name' => $name,'ip'=>$request->ip(),'action'=>'updated','user_id'=>$user->id]);
         }else{
-            $model->activitys()->create(['record_name' => $name,'ip'=>$request->ip(),'action'=>'deleted','user_id'=>0]);
+            $model->activitys()->create(['record_name' => $name,'ip'=>$request->ip(),'action'=>'updated','user_id'=>0]);
         }
     }
 }

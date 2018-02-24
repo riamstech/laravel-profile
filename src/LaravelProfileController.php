@@ -4,6 +4,7 @@ namespace Berkayoztunc\LaravelProfile;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -75,6 +76,7 @@ class LaravelProfileController extends Controller
         $this->userGetter()->update([
             'password' => Hash::make($request->password),
         ]);
+        return redirect()->back();
     }
 
     public function setEmail(Request $request)
