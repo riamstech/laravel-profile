@@ -4,6 +4,9 @@
 [![Packagist Pre Release](https://img.shields.io/packagist/vpre/berkayoztunc/laravel-profile.svg)](https://packagist.org/packages/berkayoztunc/laravel-profile)
 [![Packagist](https://img.shields.io/packagist/dt/berkayoztunc/laravel-profile.svg)]()
 [![GitHub tag](https://img.shields.io/github/tag/berkayoztunc/laravel-profile.svg)]()
+[![style CI](https://styleci.io/repos/94459566/shield)]()
+
+
 
 
 A laravel package that can do simple profile and activity tracking. Completes the indexing and viewing of profile actions for new initiatives or quick project developers.
@@ -23,7 +26,7 @@ composer require berkayoztunc/laravel-profile
 
 ```
 
-Now add the service provider in config/app.php file:
+Now add the service provider in config/app.php file: if down laravel 5.4 
 ```
 'providers' => [
     // ...
